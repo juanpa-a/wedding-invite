@@ -1,85 +1,65 @@
 hero:
-  tagline: "The wedding of"
-  title: "said yes!"
+  tagline: "Nuestra Boda"
+  title: "Vale & Juanpa"
   description: >
-    An editorial soirée in the heart of the city — bold florals, late-night vinyl,
-    and a guest list filled with our favorite people. Come for the vows, stay for
-    the midnight espresso martinis.
-  weekday: "Saturday"
-  dateDisplay: "21 · 06 · 2026"
-  location: "Mexico City • La Casa Azul"
+    Queremos compartir con ustedes uno de los días más importantes de nuestra vida.
+    Los esperamos para celebrar juntos esta nueva etapa llena de amor.
+  weekday: "Sábado"
+  dateDisplay: "25 · 07 · 2026"
+  location: "Santiago de Querétaro • Hacienda El Salitre"
 
 story:
-  chapterLabel: "Chapter One"
-  heading: "Our Story"
+  chapterLabel: "Nuestra Historia"
+  heading: "Vale & Juanpa"
   body: |
-    We met on a crisp autumn afternoon, when a simple conversation blossomed into an inseparable friendship.
-    Over time, that friendship grew into love, and together we've shared adventures, dreams, and challenges.
-    Today, we celebrate not only our love, but also the family and friends who have joined us on this journey.
+    Lo que empezó como una amistad se convirtió en algo mucho más grande.
+    Juntos hemos construido sueños, vivido aventuras y crecido como pareja.
+    Hoy celebramos nuestro amor rodeados de las personas que más queremos.
   imageAsset: "wedshots/vadim-paripa-unsplash.jpg"
-  imageAlt: "Our story together"
+  imageAlt: "Nuestra historia juntos"
   highlights:
-    - "💌 From friends to soulmates"
-    - "✈️ Adventures across continents"
-    - "💍 Engaged under autumn skies"
+    - "De amigos a compañeros de vida"
+    - "Aventuras juntos"
+    - "Listos para el siguiente capítulo"
 
 schedule:
-  eyebrow: "Our Celebration"
-  title: "Wedding Day Schedule"
+  eyebrow: "Nuestra Celebración"
+  title: "Programa del Día"
   description: >
-    Follow along to savor every cherished moment with us—from vows to the last sparkling toast.
+    Acompáñennos en cada momento de este día tan especial para nosotros.
   events:
     - number: "01"
-      label: "Ceremony"
-      title: "Ceremony & Vows"
+      label: "Bienvenida"
+      title: "Llegada de Invitados"
       description: >
-        Gather on the chapel lawn for an intimate ceremony beneath the olive trees. Ushers are ready to guide you to your seat.
+        Los recibimos en la Hacienda El Salitre para dar inicio a esta celebración. El lugar cuenta con estacionamiento.
       details:
-        - "Prelude music begins at 3:40 PM"
-        - "Rings & vows at golden hour"
-        - "Quiet shuttle service begins at 3:15 PM"
+        - "Llegada a partir de las 15:30 hrs"
+        - "Código de vestimenta: Cocktail Semiformal"
+        - "Evento exclusivo para adultos"
     - number: "02"
-      label: "Welcome"
-      title: "Garden Cocktail Hour"
+      label: "Ceremonia"
+      title: "Ceremonia Civil"
       description: >
-        Sip seasonal cocktails, enjoy live jazz, and mingle beneath the café lights as we transition into the celebration.
+        El momento que tanto hemos esperado. La ceremonia dará inicio puntualmente.
       details:
-        - "Signature drink: Lavender Paloma"
-        - "String trio taking requests"
-        - "Canapés served throughout the garden"
+        - "Inicio puntual a las 16:00 hrs"
+        - "Hacienda El Salitre, Santiago de Querétaro"
     - number: "03"
-      label: "Dinner"
-      title: "Candlelit Reception"
+      label: "Celebración"
+      title: "Recepción y Fiesta"
       description: >
-        Savor a farm-to-table feast paired with curated wines while heartfelt toasts and stories fill the room.
+        Brindemos juntos, disfrutemos la cena y bailemos hasta que el cuerpo aguante.
       details:
-        - "Dinner call at 6:25 PM"
-        - "Toasts begin after the second course"
-        - "Dessert trio plated at 8:10 PM"
-    - number: "04"
-      label: "Celebration"
-      title: "First Dance & Party"
-      description: >
-        Kick off the dance floor with our first dance, then stay on your feet for live DJ sets, photo moments, and late-night bites.
-      details:
-        - "First dance at 8:50 PM"
-        - "Dessert lounge opens at 9:30 PM"
-        - "Photo booth until 11:30 PM"
-    - number: "05"
-      label: "Farewell"
-      title: "Sparkler Send-Off"
-      description: >
-        Close the night with a sparkling farewell and a final toast to forever. Shuttles depart every 20 minutes.
-      details:
-        - "Grab a sparkler by the garden gate"
-        - "Final toast at 11:55 PM"
-        - "Last shuttle leaves at 12:30 AM"
+        - "Cena y brindis"
+        - "Música y baile"
+        - "Barra de bebidas"
 
 gallery:
-  eyebrow: "Gallery"
-  title: "Scroll through the memories"
+  eyebrow: "Galería"
+  title: "Algunos de nuestros momentos"
   description: >
-    A curated strip of the moments we never want to forget—from the first look to the final sparkler.
+    Un vistazo a los momentos que nos han traído hasta aquí.
   images:
     - asset: "wedshots/jakob-owens-unsplash.jpg"
       alt: "First look on the veranda"
@@ -97,19 +77,19 @@ gallery:
       alt: "Sparkler send-off moment"
 
 cards:
-  - imageAlt: "RSVP"
-    title: "RSVP"
-    description: "Let us know if you’ll be joining our special day!"
-    href: "/rsvp"
-  - imageAlt: "Wishlist"
-    title: "Wishlist"
-    description: "See our gift wishlist and help us start our new chapter."
-    href: "/wishlist"
+  - imageAlt: "Confirmar Asistencia"
+    title: "Confirmar Asistencia"
+    description: "Confirma por WhatsApp al +52 5614964054 o al +52 4461693661"
+    href: "https://wa.me/525614964054"
+  - imageAlt: "Mesa de Regalos"
+    title: "Mesa de Regalos"
+    description: "Próximamente compartiremos el link de nuestra mesa de regalos."
+    href: "#"
 
 countdown:
-  label: "Wedding Weekend Countdown"
-  heading: 'Countdown to "We Do"'
+  label: "Cuenta Regresiva"
+  heading: "Faltan..."
   message: >
-    Every sunrise brings us closer to the moment we gather together. Save the date and get ready for an unforgettable celebration.
-  target: "2026-06-21T21:00:00Z"
-  location: "Mexico City • La Casa Azul"
+    Cada día nos acerca más al momento de celebrar juntos. Guarden la fecha y prepárense para pasarla increíble.
+  target: "2026-07-25T22:00:00Z"
+  location: "Santiago de Querétaro • Hacienda El Salitre"
