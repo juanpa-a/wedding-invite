@@ -15,7 +15,7 @@ story:
     Lo que empezó como una amistad se convirtió en algo mucho más grande.
     Juntos hemos construido sueños, vivido aventuras y crecido como pareja.
     Hoy celebramos nuestro amor rodeados de las personas que más queremos.
-  imageAsset: "wedshots/vadim-paripa-unsplash.jpg"
+  imageAsset: "wedshots/photo_2026-03-07_17-44-09.jpg"
   imageAlt: "Nuestra historia juntos"
   highlights:
     - "De amigos a compañeros de vida"
@@ -26,7 +26,7 @@ schedule:
   eyebrow: "Nuestra Celebración"
   title: "Programa del Día"
   description: >
-    Acompáñennos en cada momento de este día tan especial para nosotros.
+    Acompáñenos en cada momento de este día tan especial para nosotros.
   events:
     - number: "01"
       label: "Bienvenida"
@@ -61,30 +61,95 @@ gallery:
   description: >
     Un vistazo a los momentos que nos han traído hasta aquí.
   images:
-    - asset: "wedshots/jakob-owens-unsplash.jpg"
-      alt: "First look on the veranda"
-    - asset: "wedshots/leonardo-miranda-unsplash.jpg"
-      alt: "Bridal bouquet close-up"
-    - asset: "wedshots/nathan-dumlao-2-unsplash.jpg"
-      alt: "Couple walking through the garden"
-    - asset: "wedshots/nathan-dumlao-unsplash.jpg"
-      alt: "Sunset toast with friends"
-    - asset: "wedshots/nikita-shirokov-unsplash.jpg"
-      alt: "First dance candid"
-    - asset: "wedshots/sandy-millar-unsplash.jpg"
-      alt: "Bridal party cheering"
-    - asset: "wedshots/vadim-paripa-unsplash.jpg"
-      alt: "Sparkler send-off moment"
+    - asset: "wedshots/photo_2026-03-07_17-44-09.jpg"
+      alt: "Vale y Juanpa"
+    - asset: "wedshots/photo_2026-03-07_17-44-23.jpg"
+      alt: "Vale y Juanpa"
+    - asset: "wedshots/photo_2026-03-07_17-44-35.jpg"
+      alt: "Vale y Juanpa"
+    - asset: "wedshots/photo_2026-03-07_17-44-39.jpg"
+      alt: "Vale y Juanpa"
+    - asset: "wedshots/photo_2026-03-07_17-44-44.jpg"
+      alt: "Vale y Juanpa"
+    - asset: "wedshots/photo_2026-03-07_17-44-48.jpg"
+      alt: "Vale y Juanpa"
+    - asset: "wedshots/photo_2026-03-07_17-44-53.jpg"
+      alt: "Vale y Juanpa"
+    - asset: "wedshots/photo_2026-03-07_17-44-57.jpg"
+      alt: "Vale y Juanpa"
+    - asset: "wedshots/photo_2026-03-07_17-46-03.jpg"
+      alt: "Vale y Juanpa"
+    - asset: "wedshots/photo_2026-03-07_17-47-00.jpg"
+      alt: "Vale y Juanpa"
 
 cards:
   - imageAlt: "Confirmar Asistencia"
     title: "Confirmar Asistencia"
-    description: "Confirma por WhatsApp al +52 5614964054 o al +52 4461693661"
-    href: "https://wa.me/525614964054"
+    description: "Confírmanos tu asistencia por WhatsApp"
+    href: "https://wa.me"
+  - imageAlt: "Ubicación"
+    title: "Ubicación"
+    description: "Hacienda El Salitre, Santiago de Querétaro"
+    href: "https://maps.app.goo.gl/uFdnSEmvMqaMwQWX6"
   - imageAlt: "Mesa de Regalos"
     title: "Mesa de Regalos"
-    description: "Próximamente compartiremos el link de nuestra mesa de regalos."
-    href: "#"
+    description: "Consulta nuestra mesa de regalos."
+    href: "https://nido-production.up.railway.app/vale-y-juanpa"
+
+favorites:
+  title: "Nuestros Favoritos en Queretaro"
+  description: >
+    Queretaro es una ciudad increible y queremos que la disfruten.
+    Aqui les compartimos algunos de nuestros lugares favoritos.
+  categories:
+    - id: restaurantes
+      label: "Restaurantes"
+      places:
+        - name: "Tikua"
+          favoriteDe: "vale"
+          instagram: "https://www.instagram.com/tikua_sureste/"
+          description: "Cocina del sureste mexicano en una casa colonial de 1830. Yucatán, Oaxaca y Chiapas en cada platillo, con ingredientes tradicionales y técnicas artesanales."
+        - name: "Acento Soul Kitchen"
+          favoriteDe: "juanpa"
+          instagram: "https://www.instagram.com/acento.soulkitchen/"
+          description: "Fusión de cocina asiática con técnicas mexicanas en un ambiente íntimo con cocina abierta. Te tratan como familia y cada visita se siente especial."
+    - id: cafes
+      label: "Cafes"
+      places:
+        - name: "Unidad"
+          favoriteDe: "vale"
+          instagram: "https://www.instagram.com/unidad.cafe/"
+          description: "Café de especialidad mexicano con experiencia de música HiFi. Un oasis tranquilo para los amantes del buen café y la buena música."
+        - name: "Tuyo"
+          favoriteDe: "juanpa"
+          instagram: "https://www.instagram.com/tuyo.cafe/"
+          description: "Cafetería de especialidad en el Centro Histórico, reconocida entre las 100 mejores de México. Granos de origen de Etiopía, Colombia y más."
+    - id: bares
+      label: "Bares"
+      places:
+        - name: "La Caja Popular"
+          favoriteDe: "vale"
+          instagram: "https://www.instagram.com/lacajapopular/"
+          description: "El primer bar dedicado 100% al Stand Up Comedy en Latinoamérica. Shows de comedia premium y noches de micrófono abierto para pasar una noche inolvidable."
+        - name: "Cerveceria Hercules"
+          favoriteDe: "juanpa"
+          instagram: "https://www.instagram.com/cchercules/"
+          description: "Cervecería artesanal en un edificio histórico del siglo XIX con más de 50 estilos de cerveza al año. Un espacio comunitario con restaurantes y tiendas artesanales."
+    - id: lugares
+      label: "Lugares"
+      places:
+        - name: "Panaderia Saint Honore"
+          favoriteDe: "vale"
+          instagram: "https://www.instagram.com/sainthonorepanaderia/"
+          description: "Reconocida como una de las mejores panaderías de Querétaro. Croissants de mantequilla, tartas artesanales y pan de fermentación lenta con técnica francesa."
+        - name: "Manpuku Ramen"
+          favoriteDe: "vale"
+          instagram: "https://www.instagram.com/manpuku_ramen/"
+          description: "Ramen auténtico japonés en el centro histórico de Querétaro. Sopas reconfortantes, yakimeshi y panecillos al vapor hechos con técnica y pasión."
+        - name: "Masa Critica Pan y Cafe"
+          favoriteDe: "juanpa"
+          instagram: "https://www.instagram.com/masacriticapanycafe/"
+          description: "Pan artesanal con alma francesa y corazón mexicano: croissants, conchas y guacamayas que vuelan los fines de semana. El café de calidad hace de cada visita algo especial."
 
 countdown:
   label: "Cuenta Regresiva"

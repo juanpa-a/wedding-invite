@@ -53,6 +53,26 @@ export interface GalleryContent {
   images: GalleryImage[];
 }
 
+export interface FavoritePlace {
+  name: string;
+  favoriteDe: "vale" | "juanpa";
+  description?: string;
+  recommendedDish?: string;
+  instagram?: string;
+}
+
+export interface FavoriteCategory {
+  id: string;
+  label: string;
+  places: FavoritePlace[];
+}
+
+export interface FavoritesContent {
+  title: string;
+  description: string;
+  categories: FavoriteCategory[];
+}
+
 export interface CountdownContent {
   label: string;
   heading: string;
@@ -67,6 +87,7 @@ export interface EventContent {
   schedule: ScheduleContent;
   gallery: GalleryContent;
   cards: CardContent[];
+  favorites: FavoritesContent;
   countdown: CountdownContent;
 }
 

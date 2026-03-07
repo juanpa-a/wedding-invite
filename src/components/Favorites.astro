@@ -1,0 +1,88 @@
+---
+import { getEventData } from "../data/eventData";
+import FavoriteCard from "./FavoriteCard.astro";
+
+const { favorites } = getEventData();
+const categories = favorites.categories ?? [];
+---
+
+<section
+    class="py-24 px-6"
+    style="background-color: var(--color-background); color: var(--color-primary);"
+>
+    <div class="mx-auto w-full max-w-6xl">
+        <header class="mb-12 max-w-3xl">
+            <h2
+                class="text-4xl font-semibold tracking-tight font-(--font-display) sm:text-5xl lg:text-6xl"
+                style="color: var(--color-primary);"
+            >
+                {favorites.title}
+            </h2>
+            <p
+                class="mt-6 text-lg leading-relaxed"
+                style="color: var(--color-primary); opacity: 0.75;"
+            >
+                {favorites.description}
+            </p>
+        </header>
+
+        <nav
+            class="-mx-6 mb-10 flex gap-3 overflow-x-auto px-6 sm:mx-0 sm:flex-wrap sm:px-0"
+            aria-label="Categorias de favoritos"
+        >
+            {categories.map((cat, i) => (
+                <button
+                    type="button"
+                    class="fav-tab shrink-0 rounded-full border px-4 py-2 text-sm uppercase tracking-[0.2em] transition-colors duration-200"
+                    data-tab={cat.id}
+                    style={
+                        i === 0
+                            ? `background: var(--color-primary); color: var(--color-secondary); border-color: var(--color-primary);`
+                            : `background: transparent; color: var(--color-primary); border-color: var(--color-primary);`
+                    }
+                >
+                    {cat.label}
+                </button>
+            ))}
+        </nav>
+
+        <div>
+            {categories.map((cat, i) => (
+                <div
+                    class="fav-panel grid gap-8 md:grid-cols-2"
+                    data-panel={cat.id}
+                    style={i !== 0 ? "display: none;" : ""}
+                >
+                    {cat.places.map((place) => (
+                        <FavoriteCard place={place} />
+                    ))}
+                </div>
+            ))}
+        </div>
+    </div>
+</section>
+
+<script>
+    const tabs = document.querySelectorAll<HTMLButtonElement>(".fav-tab");
+    const panels = document.querySelectorAll<HTMLDivElement>(".fav-panel");
+
+    tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+            const target = tab.dataset.tab;
+
+            tabs.forEach((t) => {
+                if (t.dataset.tab === target) {
+                    t.style.background = "var(--color-primary)";
+                    t.style.color = "var(--color-secondary)";
+                } else {
+                    t.style.background = "transparent";
+                    t.style.color = "var(--color-primary)";
+                }
+            });
+
+            panels.forEach((p) => {
+                p.style.display = p.dataset.panel === target ? "" : "none";
+            });
+        });
+    });
+</script>
