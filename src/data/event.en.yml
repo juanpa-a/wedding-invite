@@ -101,7 +101,7 @@ cards:
   - imageAlt: "RSVP"
     title: "RSVP"
     description: "Confirm your attendance via WhatsApp"
-    href: "https://wa.me"
+    href: "whatsapp://open"
   - imageAlt: "Location"
     title: "Location"
     description: "Hacienda El Salitre, Santiago de Querétaro"

@@ -101,7 +101,7 @@ cards:
   - imageAlt: "Confirmar Presença"
     title: "Confirmar Presença"
     description: "Confirme sua presença pelo WhatsApp"
-    href: "https://wa.me"
+    href: "whatsapp://open"
   - imageAlt: "Localização"
     title: "Localização"
     description: "Hacienda El Salitre, Santiago de Querétaro"

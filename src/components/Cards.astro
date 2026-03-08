@@ -14,6 +14,7 @@ const cards = cardsProp ?? cardsDefault;
                 <a
                     href={card.href}
                     class="group block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+                    {...(card.href.startsWith("whatsapp://") ? { "data-whatsapp": "" } : {})}
                 >
                     <Card
                         image={card.image}
@@ -26,3 +27,17 @@ const cards = cardsProp ?? cardsDefault;
         }
     </div>
 </section>
+
+<script type="module">
+  document.querySelectorAll("a[data-whatsapp]").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      if (isMobile) {
+        window.location.href = "whatsapp://";
+      } else {
+        window.open("https://web.whatsapp.com", "_blank");
+      }
+    });
+  });
+</script>
