@@ -1,7 +1,9 @@
 ---
-import { getEventData } from "../data/eventData";
-
-const { schedule } = getEventData();
+import { getEventData, type ScheduleContent } from "../data/eventData";
+interface Props { schedule?: ScheduleContent }
+const { schedule: scheduleProp } = Astro.props;
+const { schedule: scheduleDefault } = getEventData();
+const schedule = scheduleProp ?? scheduleDefault;
 const events = schedule.events ?? [];
 ---
 

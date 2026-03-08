@@ -1,8 +1,10 @@
 ---
-import { getEventData } from "../data/eventData";
+import { getEventData, type FavoritesContent } from "../data/eventData";
 import FavoriteCard from "./FavoriteCard.astro";
-
-const { favorites } = getEventData();
+interface Props { favorites?: FavoritesContent }
+const { favorites: favoritesProp } = Astro.props;
+const { favorites: favoritesDefault } = getEventData();
+const favorites = favoritesProp ?? favoritesDefault;
 const categories = favorites.categories ?? [];
 ---
 

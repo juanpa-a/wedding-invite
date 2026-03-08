@@ -1,7 +1,9 @@
 ---
-import { getEventData } from "../data/eventData";
-
-const { countdown } = getEventData();
+import { getEventData, type CountdownContent } from "../data/eventData";
+interface Props { countdown?: CountdownContent }
+const { countdown: countdownProp } = Astro.props;
+const { countdown: countdownDefault } = getEventData();
+const countdown = countdownProp ?? countdownDefault;
 const eventDate = countdown.target;
 const eventLabel = countdown.label;
 const eventHeading = countdown.heading;
@@ -56,7 +58,7 @@ const eventLocation = countdown.location;
                     class="text-sm uppercase tracking-[0.35em]"
                     style="color: var(--color-accent);"
                 >
-                    Days
+                    {countdown.days}
                 </p>
                 <p
                     class="font-display text-5xl sm:text-6xl"
@@ -77,7 +79,7 @@ const eventLocation = countdown.location;
                     class="text-sm uppercase tracking-[0.35em]"
                     style="color: var(--color-accent);"
                 >
-                    Hours
+                    {countdown.hours}
                 </p>
                 <p
                     class="font-display text-5xl sm:text-6xl"
@@ -98,7 +100,7 @@ const eventLocation = countdown.location;
                     class="text-sm uppercase tracking-[0.35em]"
                     style="color: var(--color-accent);"
                 >
-                    Minutes
+                    {countdown.minutes}
                 </p>
                 <p
                     class="font-display text-5xl sm:text-6xl"
@@ -119,7 +121,7 @@ const eventLocation = countdown.location;
                     class="text-sm uppercase tracking-[0.35em]"
                     style="color: var(--color-accent);"
                 >
-                    Seconds
+                    {countdown.seconds}
                 </p>
                 <p
                     class="font-display text-5xl sm:text-6xl"

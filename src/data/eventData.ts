@@ -1,5 +1,7 @@
 import yaml from "yaml";
-import eventSource from "./event.yml?raw";
+import esSource from "./event.yml?raw";
+import enSource from "./event.en.yml?raw";
+import ptSource from "./event.pt.yml?raw";
 
 export interface HeroContent {
   tagline: string;
@@ -79,6 +81,10 @@ export interface CountdownContent {
   message: string;
   target: string;
   location: string;
+  days: string;
+  hours: string;
+  minutes: string;
+  seconds: string;
 }
 
 export interface EventContent {
@@ -91,8 +97,12 @@ export interface EventContent {
   countdown: CountdownContent;
 }
 
-const parsedEventData = yaml.parse(eventSource) as EventContent;
+const sources: Record<string, string> = { es: esSource, en: enSource, pt: ptSource };
+const parsed: Partial<Record<string, EventContent>> = {};
 
-export function getEventData(): EventContent {
-  return parsedEventData;
+export function getEventData(locale: "es" | "en" | "pt" = "es"): EventContent {
+  if (!parsed[locale]) {
+    parsed[locale] = yaml.parse(sources[locale]) as EventContent;
+  }
+  return parsed[locale]!;
 }

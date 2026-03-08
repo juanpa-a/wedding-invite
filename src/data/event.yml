@@ -97,10 +97,10 @@ cards:
     href: "https://nido-production.up.railway.app/vale-y-juanpa"
 
 favorites:
-  title: "Nuestros Favoritos en Queretaro"
+  title: "Nuestros Favoritos en Querétaro"
   description: >
-    Queretaro es una ciudad increible y queremos que la disfruten.
-    Aqui les compartimos algunos de nuestros lugares favoritos.
+    Querétaro es una ciudad increíble y queremos que la disfruten.
+    Aquí les compartimos algunos de nuestros lugares favoritos.
   categories:
     - id: restaurantes
       label: "Restaurantes"
@@ -158,3 +158,7 @@ countdown:
     Cada día nos acerca más al momento de celebrar juntos. Guarden la fecha y prepárense para pasarla increíble.
   target: "2026-07-25T22:00:00Z"
   location: "Santiago de Querétaro • Hacienda El Salitre"
+  days: "Días"
+  hours: "Horas"
+  minutes: "Minutos"
+  seconds: "Segundos"

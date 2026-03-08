@@ -1,0 +1,164 @@
+hero:
+  tagline: "Nosso Casamento"
+  title: "Vale & Juanpa"
+  description: >
+    Queremos compartilhar com vocês um dos dias mais importantes de nossas vidas.
+    Esperamos por vocês para celebrar juntos esta nova etapa cheia de amor.
+  weekday: "Sábado"
+  dateDisplay: "25 · 07 · 2026"
+  location: "Santiago de Querétaro • Hacienda El Salitre"
+
+story:
+  chapterLabel: "Nossa História"
+  heading: "Vale & Juanpa"
+  body: |
+    O que começou como uma amizade se tornou algo muito maior.
+    Juntos construímos sonhos, vivemos aventuras e crescemos como casal.
+    Hoje celebramos nosso amor rodeados das pessoas que mais amamos.
+  imageAsset: "wedshots/photo_2026-03-07_17-44-09.jpg"
+  imageAlt: "Nossa história juntos"
+  highlights:
+    - "De amigos a companheiros de vida"
+    - "Aventuras juntos"
+    - "Prontos para o próximo capítulo"
+
+schedule:
+  eyebrow: "Nossa Celebração"
+  title: "Programação do Dia"
+  description: >
+    Junte-se a nós em cada momento deste dia tão especial para nós.
+  events:
+    - number: "01"
+      label: "Boas-vindas"
+      title: "Chegada dos Convidados"
+      description: >
+        Recebemos vocês na Hacienda El Salitre para dar início a esta celebração. O local tem estacionamento disponível.
+      details:
+        - "Chegada a partir das 15h30"
+        - "Dress code: Cocktail Semiformal"
+        - "Evento exclusivo para adultos"
+    - number: "02"
+      label: "Cerimônia"
+      title: "Cerimônia Civil"
+      description: >
+        O momento que tanto esperávamos. A cerimônia começará pontualmente.
+      details:
+        - "Início pontual às 16h00"
+        - "Hacienda El Salitre, Santiago de Querétaro"
+    - number: "03"
+      label: "Celebração"
+      title: "Recepção e Festa"
+      description: >
+        Vamos brindar juntos, aproveitar o jantar e dançar até não poder mais.
+      details:
+        - "Jantar e brinde"
+        - "Música e dança"
+        - "Bar aberto"
+
+gallery:
+  eyebrow: "Galeria"
+  title: "Alguns dos nossos momentos"
+  description: >
+    Um vislumbre dos momentos que nos trouxeram até aqui.
+  images:
+    - asset: "wedshots/photo_2026-03-07_17-44-09.jpg"
+      alt: "Vale e Juanpa"
+    - asset: "wedshots/photo_2026-03-07_17-44-23.jpg"
+      alt: "Vale e Juanpa"
+    - asset: "wedshots/photo_2026-03-07_17-44-35.jpg"
+      alt: "Vale e Juanpa"
+    - asset: "wedshots/photo_2026-03-07_17-44-39.jpg"
+      alt: "Vale e Juanpa"
+    - asset: "wedshots/photo_2026-03-07_17-44-44.jpg"
+      alt: "Vale e Juanpa"
+    - asset: "wedshots/photo_2026-03-07_17-44-48.jpg"
+      alt: "Vale e Juanpa"
+    - asset: "wedshots/photo_2026-03-07_17-44-53.jpg"
+      alt: "Vale e Juanpa"
+    - asset: "wedshots/photo_2026-03-07_17-44-57.jpg"
+      alt: "Vale e Juanpa"
+    - asset: "wedshots/photo_2026-03-07_17-46-03.jpg"
+      alt: "Vale e Juanpa"
+    - asset: "wedshots/photo_2026-03-07_17-47-00.jpg"
+      alt: "Vale e Juanpa"
+
+cards:
+  - imageAlt: "Confirmar Presença"
+    title: "Confirmar Presença"
+    description: "Confirme sua presença pelo WhatsApp"
+    href: "https://wa.me"
+  - imageAlt: "Localização"
+    title: "Localização"
+    description: "Hacienda El Salitre, Santiago de Querétaro"
+    href: "https://maps.app.goo.gl/uFdnSEmvMqaMwQWX6"
+  - imageAlt: "Lista de Presentes"
+    title: "Lista de Presentes"
+    description: "Consulte nossa lista de presentes."
+    href: "https://nido-production.up.railway.app/vale-y-juanpa"
+
+favorites:
+  title: "Nossos Favoritos em Querétaro"
+  description: >
+    Querétaro é uma cidade incrível e queremos que vocês a aproveitem.
+    Aqui compartilhamos alguns dos nossos lugares favoritos.
+  categories:
+    - id: restaurantes
+      label: "Restaurantes"
+      places:
+        - name: "Tikua"
+          favoriteDe: "vale"
+          instagram: "https://www.instagram.com/tikua_sureste/"
+          description: "Culinária do sudeste mexicano em uma casa colonial de 1830. Yucatán, Oaxaca e Chiapas em cada prato, com ingredientes tradicionais e técnicas artesanais."
+        - name: "Acento Soul Kitchen"
+          favoriteDe: "juanpa"
+          instagram: "https://www.instagram.com/acento.soulkitchen/"
+          description: "Fusão de culinária asiática com técnicas mexicanas em um ambiente íntimo com cozinha aberta. Tratam você como família e cada visita é especial."
+    - id: cafes
+      label: "Cafés"
+      places:
+        - name: "Unidad"
+          favoriteDe: "vale"
+          instagram: "https://www.instagram.com/unidad.cafe/"
+          description: "Café especial mexicano com experiência de música HiFi. Um oásis tranquilo para os amantes de bom café e boa música."
+        - name: "Tuyo"
+          favoriteDe: "juanpa"
+          instagram: "https://www.instagram.com/tuyo.cafe/"
+          description: "Cafeteria especial no Centro Histórico, reconhecida entre as 100 melhores do México. Grãos de origem da Etiópia, Colômbia e mais."
+    - id: bares
+      label: "Bares"
+      places:
+        - name: "La Caja Popular"
+          favoriteDe: "vale"
+          instagram: "https://www.instagram.com/lacajapopular/"
+          description: "O primeiro bar 100% dedicado ao Stand Up Comedy na América Latina. Shows de comédia premium e noites de microfone aberto para uma noite inesquecível."
+        - name: "Cerveceria Hercules"
+          favoriteDe: "juanpa"
+          instagram: "https://www.instagram.com/cchercules/"
+          description: "Cervejaria artesanal em um edifício histórico do século XIX com mais de 50 estilos de cerveja por ano. Um espaço comunitário com restaurantes e lojas artesanais."
+    - id: lugares
+      label: "Lugares"
+      places:
+        - name: "Panaderia Saint Honore"
+          favoriteDe: "vale"
+          instagram: "https://www.instagram.com/sainthonorepanaderia/"
+          description: "Reconhecida como uma das melhores padarias de Querétaro. Croissants de manteiga, tortas artesanais e pão de fermentação lenta com técnica francesa."
+        - name: "Manpuku Ramen"
+          favoriteDe: "vale"
+          instagram: "https://www.instagram.com/manpuku_ramen/"
+          description: "Ramen japonês autêntico no centro histórico de Querétaro. Sopas reconfortantes, yakimeshi e pãezinhos no vapor feitos com técnica e paixão."
+        - name: "Masa Critica Pan y Cafe"
+          favoriteDe: "juanpa"
+          instagram: "https://www.instagram.com/masacriticapanycafe/"
+          description: "Pão artesanal com alma francesa e coração mexicano: croissants, conchas e guacamayas que somem nos fins de semana. O café de qualidade torna cada visita algo especial."
+
+countdown:
+  label: "Contagem Regressiva"
+  heading: "Faltam..."
+  message: >
+    Cada dia nos aproxima mais do momento de celebrar juntos. Reservem a data e se preparem para uma festa incrível.
+  target: "2026-07-25T22:00:00Z"
+  location: "Santiago de Querétaro • Hacienda El Salitre"
+  days: "Dias"
+  hours: "Horas"
+  minutes: "Minutos"
+  seconds: "Segundos"

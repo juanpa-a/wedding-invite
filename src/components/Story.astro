@@ -1,8 +1,10 @@
 ---
 import { Image } from "astro:assets";
-import { getEventData } from "../data/eventData";
-
-const { story } = getEventData();
+import { getEventData, type StoryContent } from "../data/eventData";
+interface Props { story?: StoryContent }
+const { story: storyProp } = Astro.props;
+const { story: storyDefault } = getEventData();
+const story = storyProp ?? storyDefault;
 const highlights = story.highlights ?? [];
 const imageAlt = story.imageAlt ?? "Our story together";
 

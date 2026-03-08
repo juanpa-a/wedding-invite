@@ -1,8 +1,10 @@
 ---
 import Card from "./Card.astro";
-import { getEventData } from "../data/eventData";
-
-const { cards = [] } = getEventData();
+import { getEventData, type CardContent } from "../data/eventData";
+interface Props { cards?: CardContent[] }
+const { cards: cardsProp } = Astro.props;
+const { cards: cardsDefault = [] } = getEventData();
+const cards = cardsProp ?? cardsDefault;
 ---
 
 <section class="max-w-4xl mx-auto my-16 px-4">

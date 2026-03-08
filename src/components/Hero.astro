@@ -1,6 +1,9 @@
 ---
-import { getEventData } from "../data/eventData";
-const { hero } = getEventData();
+import { getEventData, type HeroContent } from "../data/eventData";
+interface Props { hero?: HeroContent }
+const { hero: heroProp } = Astro.props;
+const { hero: heroDefault } = getEventData();
+const hero = heroProp ?? heroDefault;
 ---
 
 <section
