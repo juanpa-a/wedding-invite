@@ -87,6 +87,24 @@ export interface CountdownContent {
   seconds: string;
 }
 
+export interface LodgingPlace {
+  name: string;
+  badge?: string;
+  description: string;
+  address: string;
+  website?: string;
+  phone?: string;
+  priceRange: string;
+  note?: string;
+  highlight?: boolean;
+}
+
+export interface LodgingContent {
+  title: string;
+  description: string;
+  places: LodgingPlace[];
+}
+
 export interface EventContent {
   hero: HeroContent;
   story: StoryContent;
@@ -94,6 +112,7 @@ export interface EventContent {
   gallery: GalleryContent;
   cards: CardContent[];
   favorites: FavoritesContent;
+  lodging: LodgingContent;
   countdown: CountdownContent;
 }
 

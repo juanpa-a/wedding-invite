@@ -6,6 +6,7 @@ import Schedule from "../../components/Schedule.astro";
 import Cards from "../../components/Cards.astro";
 import Gallery from "../../components/Gallery.astro";
 import Favorites from "../../components/Favorites.astro";
+import Lodging from "../../components/Lodging.astro";
 import Count from "../../components/Count.astro";
 import { getEventData } from "../../data/eventData";
 
@@ -19,5 +20,6 @@ const data = getEventData("en");
     <Cards cards={data.cards} />
     <Gallery gallery={data.gallery} />
     <Favorites favorites={data.favorites} />
+    <Lodging lodging={data.lodging} />
     <Count countdown={data.countdown} />
 </Layout>

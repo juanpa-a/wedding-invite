@@ -151,6 +151,38 @@ favorites:
           instagram: "https://www.instagram.com/masacriticapanycafe/"
           description: "Artisan bread with a French soul and Mexican heart: croissants, conchas, and guacamayas that fly out on weekends. Quality coffee makes every visit something special."
 
+lodging:
+  title: "Lodging"
+  description: >
+    If you're traveling from out of town or just want a cozy place to rest after the party,
+    here are some lodging options near the venue.
+  places:
+    - name: "Hacienda El Salitre"
+      badge: "At the venue"
+      description: "The most convenient option — stay right where the party is, no need to worry about transportation."
+      address: "Rafael Osuna SN, Raquet Club, 76127 Santiago de Querétaro, Qro."
+      website: "https://www.elsalitre.mx/el-hotel"
+      phone: "+52 442 675 0505"
+      priceRange: "$2,000 – $3,000 MXN / night"
+      note: "Mention you're attending our wedding to get a special rate."
+      highlight: true
+    - name: "Holiday Inn Querétaro"
+      badge: "6 min from venue"
+      description: "A reliable and comfortable option very close to the venue."
+      address: "Km. 11 Carretera Querétaro–San Luis Potosí, 76100 Santiago de Querétaro, Qro."
+      website: "https://www.ihg.com/holidayinn/hotels/us/en/queretaro/mqebc/hoteldetail"
+      phone: "+52 442 238 9900"
+      priceRange: "$1,800 – $2,000 MXN / night"
+      highlight: false
+    - name: "Extended Suites Juriquilla"
+      badge: "7 min from venue"
+      description: "Great if you're looking for a more affordable option with all the comforts."
+      address: "Av. Palma Canaria 831, Fracc. Valle Comercial, 76230 Santiago de Querétaro, Qro."
+      website: "https://www.extendedsuites.com.mx/hotel-extended-suites-queretaro-juriquilla/"
+      phone: "+52 442 642 3520"
+      priceRange: "$800 – $1,200 MXN / night"
+      highlight: false
+
 countdown:
   label: "Countdown"
   heading: "Time until..."
