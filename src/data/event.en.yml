@@ -35,7 +35,22 @@ schedule:
         We welcome you to Hacienda El Salitre to kick off this celebration. Parking is available on site.
       details:
         - "Arrival from 3:30 PM"
-        - "Dress code: Cocktail Semi-formal"
+        - text: "Dress code: Cocktail Semi-formal"
+          sections:
+            - title: "Women"
+              items:
+                - "Short, knee-length, or midi dresses"
+                - "Dress pants, jumpsuits, or coordinated sets"
+                - "The Little Black Dress is always a great choice"
+                - "Heels and bold accessories"
+                - "Avoid long gowns"
+            - title: "Men"
+              items:
+                - "Straight cuts and monochromatic tones"
+                - "Shirt always required"
+                - "Blazer recommended; without blazer, long-sleeve tucked-in shirt"
+                - "Tie optional"
+                - "No jeans allowed"
         - "Adults-only event"
     - number: "02"
       label: "Ceremony"

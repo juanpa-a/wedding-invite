@@ -35,7 +35,22 @@ schedule:
         Los recibimos en la Hacienda El Salitre para dar inicio a esta celebración. El lugar cuenta con estacionamiento.
       details:
         - "Llegada a partir de las 15:30 hrs"
-        - "Código de vestimenta: Cocktail Semiformal"
+        - text: "Código de vestimenta: Cocktail Semiformal"
+          sections:
+            - title: "Mujeres"
+              items:
+                - "Vestidos cortos, a la rodilla o largo midi"
+                - "Pantalones de vestir, enterizos o conjuntos"
+                - "El Little Black Dress es siempre una gran opción"
+                - "Zapatos altos y accesorios llamativos"
+                - "Evitar vestidos largos"
+            - title: "Hombres"
+              items:
+                - "Cortes rectos y monocromáticos"
+                - "Camisa siempre presente"
+                - "Blazer recomendado; sin blazer, camisa de manga larga fajada"
+                - "Corbata opcional"
+                - "No se permiten jeans"
         - "Evento exclusivo para adultos"
     - number: "02"
       label: "Ceremonia"

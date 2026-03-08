@@ -21,12 +21,24 @@ export interface StoryContent {
   highlights: string[];
 }
 
+export interface ExpandableSection {
+  title: string;
+  items: string[];
+}
+
+export interface ExpandableDetail {
+  text: string;
+  sections: ExpandableSection[];
+}
+
+export type ScheduleDetail = string | ExpandableDetail;
+
 export interface ScheduleEvent {
   number: string;
   label: string;
   title: string;
   description: string;
-  details: string[];
+  details: ScheduleDetail[];
 }
 
 export interface ScheduleContent {

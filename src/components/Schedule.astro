@@ -1,5 +1,5 @@
 ---
-import { getEventData, type ScheduleContent } from "../data/eventData";
+import { getEventData, type ScheduleContent, type ExpandableDetail } from "../data/eventData";
 interface Props { schedule?: ScheduleContent }
 const { schedule: scheduleProp } = Astro.props;
 const { schedule: scheduleDefault } = getEventData();
@@ -80,15 +80,54 @@ const events = schedule.events ?? [];
                                     class="space-y-3 text-sm sm:text-base"
                                     style="color: var(--color-secondary); opacity: 0.8;"
                                 >
-                                    {event.details.map((detail) => (
-                                        <li class="flex items-start gap-3 leading-relaxed">
-                                            <span
-                                                class="mt-1 inline-block h-1.5 w-1.5 rounded-full"
-                                                style="background: var(--color-accent); opacity: 0.5;"
-                                            />
-                                            <span>{detail}</span>
-                                        </li>
-                                    ))}
+                                    {event.details.map((detail) =>
+                                        typeof detail === "string" ? (
+                                            <li class="flex items-start gap-3 leading-relaxed">
+                                                <span
+                                                    class="mt-1 inline-block h-1.5 w-1.5 rounded-full"
+                                                    style="background: var(--color-accent); opacity: 0.5;"
+                                                />
+                                                <span>{detail}</span>
+                                            </li>
+                                        ) : (
+                                            <li class="detail-accordion">
+                                                <details>
+                                                    <summary class="flex items-start gap-3 leading-relaxed cursor-pointer list-none">
+                                                        <span
+                                                            class="mt-1 inline-block h-1.5 w-1.5 rounded-full shrink-0"
+                                                            style="background: var(--color-accent); opacity: 0.5;"
+                                                        />
+                                                        <span class="flex-1">{(detail as ExpandableDetail).text}</span>
+                                                        <span class="detail-chevron mt-1 shrink-0" aria-hidden="true">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                                <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
+                                                    </summary>
+                                                    <div class="detail-expandable-content pl-[1.125rem] mt-4 space-y-4">
+                                                        {(detail as ExpandableDetail).sections.map((section) => (
+                                                            <div>
+                                                                <p class="font-semibold text-sm mb-2" style="color: var(--color-secondary);">
+                                                                    {section.title}
+                                                                </p>
+                                                                <ul class="space-y-1.5">
+                                                                    {section.items.map((item) => (
+                                                                        <li class="flex items-start gap-2 text-sm leading-relaxed">
+                                                                            <span
+                                                                                class="mt-1.5 inline-block h-1 w-1 rounded-full shrink-0"
+                                                                                style="background: var(--color-accent); opacity: 0.35;"
+                                                                            />
+                                                                            <span>{item}</span>
+                                                                        </li>
+                                                                    ))}
+                                                                </ul>
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </details>
+                                            </li>
+                                        )
+                                    )}
                                 </ul>
                             </div>
                         </div>
@@ -98,3 +137,33 @@ const events = schedule.events ?? [];
         </div>
     </div>
 </section>
+
+<style>
+    .detail-accordion summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .detail-chevron {
+        transition: transform 0.25s ease;
+        opacity: 0.5;
+    }
+
+    details[open] > summary .detail-chevron {
+        transform: rotate(180deg);
+    }
+
+    .detail-expandable-content {
+        animation: accordion-open 0.25s ease;
+    }
+
+    @keyframes accordion-open {
+        from {
+            opacity: 0;
+            transform: translateY(-4px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
