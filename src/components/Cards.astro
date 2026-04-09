@@ -32,12 +32,7 @@ const cards = cardsProp ?? cardsDefault;
   document.querySelectorAll("a[data-whatsapp]").forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
-      const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-      if (isMobile) {
-        window.location.href = "whatsapp://";
-      } else {
-        window.open("https://web.whatsapp.com", "_blank");
-      }
+      window.open("https://wa.me/524424513138", "_blank");
     });
   });
 </script>
