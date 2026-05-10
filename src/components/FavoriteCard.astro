@@ -8,6 +8,8 @@ interface Props {
 const { place } = Astro.props;
 const isVale = place.favoriteDe === "vale";
 const badgeLabel = isVale ? "El favorito de Vale" : "El favorito de Juanpa";
+const placeLink = place.instagram ?? place.website;
+const placeLinkLabel = place.instagram ? "Ver en Instagram" : "Ver información";
 ---
 
 <article
@@ -44,15 +46,15 @@ const badgeLabel = isVale ? "El favorito de Vale" : "El favorito de Juanpa";
         </p>
     )}
 
-    {place.instagram && (
+    {placeLink && (
         <a
-            href={place.instagram}
+            href={placeLink}
             target="_blank"
             rel="noopener noreferrer"
             class="mt-3 inline-flex items-center gap-1.5 text-sm underline underline-offset-4"
             style="color: var(--color-primary); opacity: 0.6;"
         >
-            Ver en Instagram
+            {placeLinkLabel}
         </a>
     )}
 </article>

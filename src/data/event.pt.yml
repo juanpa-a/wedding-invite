@@ -128,6 +128,14 @@ favorites:
           favoriteDe: "juanpa"
           instagram: "https://www.instagram.com/acento.soulkitchen/"
           description: "Fusão de culinária asiática com técnicas mexicanas em um ambiente íntimo com cozinha aberta. Tratam você como família e cada visita é especial."
+        - name: "Techol Cocina de Mar"
+          favoriteDe: "juanpa"
+          instagram: "https://www.instagram.com/techol_cocinademar/"
+          description: "Alta cozinha mexicana do mar no Centro de Querétaro, com terraço, coquetelaria e uma proposta fresca para comer bem sem pressa."
+        - name: "Señorita Thai"
+          favoriteDe: "vale"
+          website: "https://lacarte.menu/restaurants/queretaro-1/senorita-thai"
+          description: "Restaurante tailandês casual no Centro Histórico, com pad thai, curries e opções para vegetarianos e veganos."
     - id: cafes
       label: "Cafés"
       places:
