@@ -173,6 +173,24 @@ favorites:
           favoriteDe: "juanpa"
           instagram: "https://www.instagram.com/masacriticapanycafe/"
           description: "Pan artesanal con alma francesa y corazón mexicano: croissants, conchas y guacamayas que vuelan los fines de semana. El café de calidad hace de cada visita algo especial."
+    - id: planes
+      label: "Planes"
+      places:
+        - name: "Centro Historico y danzantes"
+          favoriteDe: "vale"
+          description: "Caminen por andadores, plazas e iglesias. Si les toca ver danzantes o el Baile de los Viejitos, quédense un rato: es de lo más bonito del centro."
+        - name: "Acueducto y Mirador de los Arcos"
+          favoriteDe: "juanpa"
+          description: "La foto clásica de Querétaro. Es un plan rápido, bonito y fácil de combinar con una vuelta por el centro."
+        - name: "Mercado La Cruz"
+          favoriteDe: "vale"
+          description: "Para desayunar o comer algo más local: gorditas, enchiladas queretanas, tacos, nieves y antojitos."
+        - name: "Peña de Bernal"
+          favoriteDe: "juanpa"
+          description: "Excursión de medio día si vienen con tiempo. Pueblo mágico, caminata, gorditas y vista a la peña."
+        - name: "Viñedos queretanos"
+          favoriteDe: "vale"
+          description: "Buen plan para quienes llegan antes: recorridos, catas y comida entre viñedos cerca de Querétaro."
 
 lodging:
   title: "Hospedaje"
