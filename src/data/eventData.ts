@@ -73,6 +73,7 @@ export interface FavoritePlace {
   description?: string;
   recommendedDish?: string;
   instagram?: string;
+  website?: string;
 }
 
 export interface FavoriteCategory {
